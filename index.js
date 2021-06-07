@@ -14,3 +14,13 @@ function combineEntries(arrayName){
 let arr = ['L', 'C', '1', '0', '1'];
 
 console.log(combineEntries(arr));
+
+function decreasingSum(integer) {
+   if (integer === 1){
+      return integer;
+   } else {
+      return integer + (decreasingSum(integer-1));
+   }
+}
+
+console.log(decreasingSum(5));
